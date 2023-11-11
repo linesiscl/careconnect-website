@@ -1,0 +1,54 @@
+@import './abstract/base';
+@import './components/navbar';
+@import './components/home';
+@import './components/sobre-nos';
+@import './components/redes-games';
+@import './components/importante';
+@import './components/ongs';
+@import './components/doacao';
+@import './components/loja';
+@import './components/contato';
+
+@mixin circulo{
+    background: #E9DE89;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    filter: blur(60px);
+    position: absolute;
+}
+
+#circulo{
+    @include circulo();
+    bottom: 50%;
+    left: 60%;
+}
+
+#circulo1{
+    @include circulo();
+    bottom: -105%;
+}
+
+#circulo2{
+    @include circulo();
+    right: 0;
+    bottom: -20%;
+}
+
+#circulonv2{
+    @include circulo();
+    right: 0;
+    bottom: -205%;
+}
+
+#circulo4{
+    @include circulo();
+    right: 0;
+}
+
+
+@media (max-width: 768px){
+    #circulonv2{
+        left: 30px;
+    }
+}

@@ -1,0 +1,76 @@
+@import '../abstract/variaveis';
+
+#container6{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .side-1{
+        display: grid;
+        grid-template-columns: 300px 400px;
+        align-items: center;
+        margin: 30px;
+        a{
+            img{
+                transition: 0.5s;
+                width: 230px;
+                margin: 0;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        div{
+            margin: 20px;
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                text-align: justify;
+                font-size: 20px;
+                margin: 0;
+            }
+        }
+    }
+    .side-2{
+        display: grid;
+        grid-template-columns: 400px 300px;
+        align-items: center;
+        margin: 30px;
+        div{
+            margin: 20px;
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                text-align: justify;
+                font-size: 20px;
+                margin: 0;
+            }
+        }
+        a{
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            img{
+                width: 230px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    #container6{
+        .side-1{
+            grid-template-columns: 300px;
+        }
+        .side-2{
+            grid-template-columns: 300px;
+        }
+    }
+}

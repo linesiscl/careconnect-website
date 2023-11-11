@@ -1,0 +1,41 @@
+@import '../abstract/variaveis';
+
+
+#container2{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 200px;
+    text-align: justify;
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .objetivo{
+        align-self: end;
+    }
+    p{
+        font-size: 25px;
+        line-height: 2.2rem;
+    }
+    .espaco{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 768px){
+    #container2{
+        margin: 0 30px;
+        h2{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    #seta{
+        display: none;
+    }
+}

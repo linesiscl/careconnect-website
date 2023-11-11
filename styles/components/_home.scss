@@ -1,0 +1,61 @@
+@import '../abstract/variaveis';
+
+.box{
+    height: 100%;
+    margin: 0 10px;
+    .title-principal{
+        margin: 0 20px;
+        padding-top: 70px;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
+    .img-arvores{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        #seta{
+            bottom: 10%;
+        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    .img-display{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .box{
+        .title-principal{
+            h1{
+                font-size: 26px;
+            }
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+    #seta{
+        display: none;
+    }
+    .img-display{
+        display: none;
+    }
+    img{
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../abstract/variaveis';
+
+header{
+    padding: 15px;
+    .title-logo{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .menu{
+        font-size: 20px;
+        margin-left: auto;
+        a{
+            &:hover{
+                color: $cor-hover;
+            }
+        }
+    }
+}
